@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#navbar{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255,255,255);
+}
+
+.logo{
+    display: flex;
+}
+
+.logo > :nth-child(1){
+    margin: 17px;
+}
+
+.logo > :nth-child(1) > img{
+    height: 50px;
+    width: 101px;
+    /* border: 1px solid black; */
+    margin-top: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.logo > :nth-child(2){
+    /* border: 1px solid black; */
+    border: none;
+    outline: none;
+
+}
+
+.logo > :nth-child(2) ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo > :nth-child(2) > ul li{
+    /* text-decoration: none; */
+    list-style: none;
+    margin-top: 35px;
+}
+
+.logo > :nth-child(2) > ul > li a{
+    margin: 15px;
+    padding: 7px;
+    text-decoration: none;
+    color: rgb(40,44,63);
+    font-family: font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.rightside{
+    display: flex;
+}
+.searchbar{
+    border: 1px solid black;
+    display: flex;
+    width: 350px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: rgb(245,245,246);
+    border: none;
+    outline: none;
+    
+    
+}
+
+.searchbar > i{
+    margin-top: 11px;
+    margin-left: 10px;
+    background-color: rgb(245,245,246);
+    color: rgb(113,114,136);
+    
+
+}
+
+.searchbar > input{
+    height: 25px;
+    width: 300px;
+    padding-top: 5px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(245,245,246);
+    color: rgb(137,137,137);
+    
+}
+
+.rightside > :nth-child(2) {
+    /* border: 1px solid black; */
+    margin-top: 32px;
+    margin-bottom: 15px;
+    margin-left: 34px;
+    border: none;
+    
+}
+
+.rightside > :nth-child(2) i{
+    margin-left: 15px;
+       
+}
+
+.rightside > :nth-child(2) p{
+    text-align: center;
+}
+
+.rightside > :nth-child(3) {
+    /* border: 1px solid black; */
+    margin-top: 32px;
+    margin-bottom: 15px;
+    margin-left: 34px;
+    border: none;
+}
+
+.rightside > :nth-child(3) i{
+    margin-left: 8px;
+}
+
+.rightside > :nth-child(3) p{
+    text-align: center;
+}
+
+
