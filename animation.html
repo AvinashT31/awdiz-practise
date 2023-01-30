@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & keyframe</title>
+</head>
+
+<style>
+    .container{
+        background-color: aqua;
+    }
+
+    .box{
+        width: 300px;
+        height: 200px;
+        position: relative;
+        background-color: brown;
+        animation-name: header;
+        animation-duration: 5s;
+        animation-iteration-count: 5;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 5s;
+    }
+
+    @keyframes header {
+        from{
+           width: 200px; 
+        }
+        to{
+         width: 1000px;
+        }
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+           This is the animation properties
+        </div>
+    </div>
+</body>
+</html>
