@@ -7,49 +7,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
-        #container{
-            border: 1px solid black;
-            width: 100%;
-            height: 500px;
-        }
-
-
-        #box {
-            border: 1px solid black;
-            height: 450px;
-            width: 90%;
-            margin: auto;
-            margin-top: 25px;
+          #container{
             display: grid;
-            grid-template-areas: 'navbar';
-            grid-template-columns: 'section';
-        }
+            grid-template-columns: 200px 500px;
+            /* grid-template-columns:repeat(2,200px); */
+            grid-gap:5px;
+          }
 
+          .item{
+             border: 1px solid black;
+             background-color: purple;
+             /* height: 50px; */
+             margin: 2px;
+             padding: 5px;
+          }
 
-        #navbar{
+          #container1{
+            display: grid;
+            grid-template-rows: 100px 80px 60px;
+            /* grid-template-columns: repeat(2, auto); */
+            grid-gap: 2rem;
+          }
+
+          .item-1{
             border: 1px solid black;
-            width: 100%;
-            height: 60px;
-            grid-area: navbar;
-        }
+            background-color: royalblue;
+          }
 
-        #section{
-            grid-area: section;
-        }
+          #container2{
+             display: grid;
+             grid-template-columns: repeat(5, 250px);
+             grid-template-rows: repeat(9, 100px);
+             grid-gap: 1rem;
+          }
+
+          .item-2{
+            border: 1px solid black;
+            background-color: blanchedalmond;
+          }
+
+          .item-2:first-child{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+          }
     </style>
 </head>
 
-<body>
-    <div id="container">
-        <div id="box">
-           <div id="navbar">
-              home about us services
-           </div>
-           <div id="section">
+<body>    
+     <h1>grid-template-column</h1>
+   <div id="container">
+       <div class="item">This is item-1</div>
+       <div class="item">This is item-2</div>
+       <div class="item">This is item-3</div>
+       <div class="item">This is item-4</div>
+       <div class="item">This is item-5</div>
+       <div class="item">This is item-6</div>
+       <div class="item">This is item-7</div>
+       <div class="item">This is item-8</div>
+       <div class="item">This is item-9</div>
+       <div class="item">This is item-8</div>
+       <div class="item">This is item-9</div>
+       <div class="item">This is item-8</div>
+       <div class="item">This is item-9</div>
+       <div class="item">This is item-8</div>
+       <div class="item">This is item-9</div>
+       <div class="item">This is item-8</div>
+       <div class="item">This is item-9</div>
+   </div>
+   
+    <h1>grid-template-row</h1>
+   <div id="container1">
+       <div class="item-1">This is item-1</div>
+       <div class="item-1">This is item-2</div>
+       <div class="item-1">This is item-3</div>
+       <div class="item-1">This is item-4</div>
+       <div class="item-1">This is item-5</div>
+       <div class="item-1">This is item-6</div>
+       <div class="item-1">This is item-7</div>
+       <div class="item-1">This is item-8</div>
+       <div class="item-1">This is item-9</div>
+       <div class="item-1">This is item-8</div>
+       <div class="item-1">This is item-9</div>
+       <div class="item-1">This is item-8</div>
+       <div class="item-1">This is item-9</div>
+       <div class="item-1">This is item-8</div>
+       <div class="item-1">This is item-9</div>
+       <div class="item-1">This is item-8</div>
+       <div class="item-1">This is item-9</div>
+   </div>
 
-           </div>
-        </div>
-    </div>
+    
+   <div id="container2">
+       <div class="item-2">This is item-1</div>
+       <div class="item-2">This is item-2</div>
+       <div class="item-2">This is item-3</div>
+       <div class="item-2">This is item-4</div>
+       <div class="item-2">This is item-5</div>
+       <div class="item-2">This is item-6</div>
+       <div class="item-2">This is item-7</div>
+       <div class="item-2">This is item-8</div>
+       <div class="item-2">This is item-9</div>
+       <div class="item-2">This is item-8</div>
+       <div class="item-2">This is item-9</div>
+       <div class="item-2">This is item-8</div>
+       <div class="item-2">This is item-9</div>
+       <div class="item-2">This is item-8</div>
+       <div class="item-2">This is item-9</div>
+       <div class="item-2">This is item-8</div>
+       <div class="item-2">This is item-9</div>
+   </div>
 </body>
 
 </html>
